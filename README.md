@@ -11,14 +11,17 @@ First, setup up jsnark prerequires in reference to https://github.com/akosba/jsn
 $ cd CRV/JsnarkCircuitBuilder
 
 $ javac -d bin -cp /usr/share/java/junit4.jar:bcprov-jdk15on-159.jar $(find ./src/* | grep ".java$")
-
+```
+```
 $ java -cp bin:bcprov-jdk15on-159.jar examples.generators.Vote
 ```
 for vote circuit
+
 ```
 $ java -cp bin examples.generators.Register
 ```
 for register circuit
+
 ```
 $ java -cp bin:bcprov-jdk15on-159.jar examples.generators.Tally
 ```
